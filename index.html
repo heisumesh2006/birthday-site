@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Netflix Intro Animation Pure CSS</title>
+  <link rel="stylesheet" href="intro.css">
+  <style>
+    /* Pause all animations until class is removed */
+    #container.paused * {
+      animation-play-state: paused !important;
+    }
+
+    /* Button styling */
+    #start-button {
+      position: fixed;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 14px 28px;
+      background: #e50914;
+      color: white;
+      font-size: 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+  </style>
+  <script>
+    // Wait until DOM is fully loaded
+    document.addEventListener("DOMContentLoaded", () => {
+      const button = document.getElementById('start-button');
+      const container = document.getElementById('container');
+      const audio = document.getElementById('netflix-sound');
+
+      // Pause animation initially
+      container.classList.add('paused');
+
+      button.addEventListener('click', () => {
+        container.classList.remove('paused');  // Start animation
+        audio.play();                          // Play sound
+        button.style.display = 'none';         // Hide button
+      });
+    });
+  </script>
+
+
+</head>
+
+<body>
+  <!-- Start Button -->
+  <div id="start-button">▶️ Start</div>
+
+  <!-- Audio -->
+  <audio id="netflix-sound" src="intro.mp3" preload="auto"></audio>
+
+  <div id="container">
+    <!-- Edit the letter attr to: N, E, T, F, L, I or X -->
+    <netflixintro letter="N">
+      <div class="helper-1">
+        <div class="effect-brush">
+          <span class="fur-31"></span>
+          <span class="fur-30"></span>
+          <span class="fur-29"></span>
+          <span class="fur-28"></span>
+          <span class="fur-27"></span>
+          <span class="fur-26"></span>
+          <span class="fur-25"></span>
+          <span class="fur-24"></span>
+          <span class="fur-23"></span>
+          <span class="fur-22"></span>
+          <span class="fur-21"></span>
+          <span class="fur-20"></span>
+          <span class="fur-19"></span>
+          <span class="fur-18"></span>
+          <span class="fur-17"></span>
+          <span class="fur-16"></span>
+          <span class="fur-15"></span>
+          <span class="fur-14"></span>
+          <span class="fur-13"></span>
+          <span class="fur-12"></span>
+          <span class="fur-11"></span>
+          <span class="fur-10"></span>
+          <span class="fur-9"></span>
+          <span class="fur-8"></span>
+          <span class="fur-7"></span>
+          <span class="fur-6"></span>
+          <span class="fur-5"></span>
+          <span class="fur-4"></span>
+          <span class="fur-3"></span>
+          <span class="fur-2"></span>
+          <span class="fur-1"></span>
+        </div>
+        <div class="effect-lumieres">
+          <span class="lamp-1"></span>
+          <span class="lamp-2"></span>
+          <span class="lamp-3"></span>
+          <span class="lamp-4"></span>
+          <span class="lamp-5"></span>
+          <span class="lamp-6"></span>
+          <span class="lamp-7"></span>
+          <span class="lamp-8"></span>
+          <span class="lamp-9"></span>
+          <span class="lamp-10"></span>
+          <span class="lamp-11"></span>
+          <span class="lamp-12"></span>
+          <span class="lamp-13"></span>
+          <span class="lamp-14"></span>
+          <span class="lamp-15"></span>
+          <span class="lamp-16"></span>
+          <span class="lamp-17"></span>
+          <span class="lamp-18"></span>
+          <span class="lamp-19"></span>
+          <span class="lamp-20"></span>
+          <span class="lamp-21"></span>
+          <span class="lamp-22"></span>
+          <span class="lamp-23"></span>
+          <span class="lamp-24"></span>
+          <span class="lamp-25"></span>
+          <span class="lamp-26"></span>
+          <span class="lamp-27"></span>
+          <span class="lamp-28"></span>
+        </div>
+      </div>
+      <div class="helper-2">
+        <div class="effect-brush">
+          <span class="fur-31"></span>
+          <span class="fur-30"></span>
+          <span class="fur-29"></span>
+          <span class="fur-28"></span>
+          <span class="fur-27"></span>
+          <span class="fur-26"></span>
+          <span class="fur-25"></span>
+          <span class="fur-24"></span>
+          <span class="fur-23"></span>
+          <span class="fur-22"></span>
+          <span class="fur-21"></span>
+          <span class="fur-20"></span>
+          <span class="fur-19"></span>
+          <span class="fur-18"></span>
+          <span class="fur-17"></span>
+          <span class="fur-16"></span>
+          <span class="fur-15"></span>
+          <span class="fur-14"></span>
+          <span class="fur-13"></span>
+          <span class="fur-12"></span>
+          <span class="fur-11"></span>
+          <span class="fur-10"></span>
+          <span class="fur-9"></span>
+          <span class="fur-8"></span>
+          <span class="fur-7"></span>
+          <span class="fur-6"></span>
+          <span class="fur-5"></span>
+          <span class="fur-4"></span>
+          <span class="fur-3"></span>
+          <span class="fur-2"></span>
+          <span class="fur-1"></span>
+        </div>
+      </div>
+      <div class="helper-3">
+        <div class="effect-brush">
+          <span class="fur-31"></span>
+          <span class="fur-30"></span>
+          <span class="fur-29"></span>
+          <span class="fur-28"></span>
+          <span class="fur-27"></span>
+          <span class="fur-26"></span>
+          <span class="fur-25"></span>
+          <span class="fur-24"></span>
+          <span class="fur-23"></span>
+          <span class="fur-22"></span>
+          <span class="fur-21"></span>
+          <span class="fur-20"></span>
+          <span class="fur-19"></span>
+          <span class="fur-18"></span>
+          <span class="fur-17"></span>
+          <span class="fur-16"></span>
+          <span class="fur-15"></span>
+          <span class="fur-14"></span>
+          <span class="fur-13"></span>
+          <span class="fur-12"></span>
+          <span class="fur-11"></span>
+          <span class="fur-10"></span>
+          <span class="fur-9"></span>
+          <span class="fur-8"></span>
+          <span class="fur-7"></span>
+          <span class="fur-6"></span>
+          <span class="fur-5"></span>
+          <span class="fur-4"></span>
+          <span class="fur-3"></span>
+          <span class="fur-2"></span>
+          <span class="fur-1"></span>
+        </div>
+      </div>
+      <div class="helper-4">
+        <div class="effect-brush">
+          <span class="fur-31"></span>
+          <span class="fur-30"></span>
+          <span class="fur-29"></span>
+          <span class="fur-28"></span>
+          <span class="fur-27"></span>
+          <span class="fur-26"></span>
+          <span class="fur-25"></span>
+          <span class="fur-24"></span>
+          <span class="fur-23"></span>
+          <span class="fur-22"></span>
+          <span class="fur-21"></span>
+          <span class="fur-20"></span>
+          <span class="fur-19"></span>
+          <span class="fur-18"></span>
+          <span class="fur-17"></span>
+          <span class="fur-16"></span>
+          <span class="fur-15"></span>
+          <span class="fur-14"></span>
+          <span class="fur-13"></span>
+          <span class="fur-12"></span>
+          <span class="fur-11"></span>
+          <span class="fur-10"></span>
+          <span class="fur-9"></span>
+          <span class="fur-8"></span>
+          <span class="fur-7"></span>
+          <span class="fur-6"></span>
+          <span class="fur-5"></span>
+          <span class="fur-4"></span>
+          <span class="fur-3"></span>
+          <span class="fur-2"></span>
+          <span class="fur-1"></span>
+        </div>
+      </div>
+    </netflixintro>
+  </div>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const button = document.getElementById('start-button');
+      const container = document.getElementById('container');
+      const audio = document.getElementById('netflix-sound');
+
+      // Pause all animations initially
+      container.classList.add('paused');
+
+      button.addEventListener('click', () => {
+        container.classList.remove('paused');  // Start animation
+        audio.play();                          // Play Netflix intro sound
+        button.style.display = 'none';         // Hide start button
+
+        // Wait for animation and then redirect
+        setTimeout(() => {
+          window.location.href = "birthday-cake.html"; // Or whatever your next file is
+        }, 4500); // Delay matches the animation length
+      });
+    });
+  </script>
+
+</body>
+
+</html>
