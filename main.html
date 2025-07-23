@@ -16,16 +16,16 @@
 <body>
     <div id="drag-container">
         <div id="spin-container">
-            <img src=" min6.jpeg" alt="">
-            <img src=" max2.jpeg" alt="">
-            <img src=" max3.jpeg" alt="">
-            <img src=" max4.jpeg" alt="">
-            <img src=" max5.jpeg" alt="">
-            <img src=" max6.jpeg" alt="">
-            <img src=" min1.jpeg" alt="">
-            <img src=" min2.jpg" alt="">
-            <img src=" min3.jpg" alt="">
-            <img src=" max1.jpg" alt="">
+            <img src=" d1.jpeg" alt="">
+            <img src="u1.jpeg" alt="">
+            <img src=" d2.jpeg" alt="">
+            <img src="u2.jpeg" alt="">
+            <img src=" d3.jpeg" alt="">
+            <img src="u3.jpeg" alt="">
+            <img src="d4.jpeg" alt="">
+            <img src="u4.jpeg" alt="">
+            <img src="d5.jpeg" alt="">
+            <img src="u5.jpeg" alt="">
             <p>Happy Birthday Dhanyaaa</p>
         </div>
         <div id="ground"></div>
@@ -35,9 +35,18 @@
 
     <!-- Audio tự động phát -->
     <audio id="myAudio" autoplay playsinline>
-        <source src="assets/audio/setlove.mp3" type="audio/mpeg">
-        <source src="assets/audio/setlove.ogg" type="audio/ogg">
+        <source src="birthday.mp3" type="audio/mpeg">
     </audio>
+    <script>
+        window.addEventListener('load', function () {
+            const audio = document.getElementById("myAudio");
+            audio.play().catch(() => {
+                console.log("Autoplay blocked. Waiting for user interaction.");
+            });
+        });
+    </script>
+
+
 
     <script src="main.js"></script>
 

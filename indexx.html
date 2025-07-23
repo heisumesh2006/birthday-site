@@ -144,7 +144,7 @@
       if (prtanya) {
         pesanwhatsapp = "Yes " + nama + ", let the birthday magic begin!";
         // ✅ FIX HERE:
-        window.location.href = "BIRTHDAY-CAKE2.html"; // Go directly here first
+        window.location.href = "main.html"; // Go directly here first
       } else {
         pesanwhatsapp = nama + ", don't miss out on the birthday fun!";
         await swalst.fire({
@@ -152,7 +152,7 @@
           timer: 2000,
           imageUrl: "" + stikerditolak.src,
         });
-        window.location.href = "BIRTHDAY-CAKE2.html"; // or skip this if you want to stay
+        window.location.href = "main.html"; // or skip this if you want to stay
       }
     }
 
@@ -160,7 +160,7 @@
     // ✅ Updated this to go to BIRTHDAY-CAKE2.html
     async function menuju() {
       await swals.fire('Yay!', 'And here comes another birthday surprise for you!', 'success');
-      window.location = "BIRTHDAY-CAKE2.html";
+      window.location = "main.html";
     }
   </script>
 
